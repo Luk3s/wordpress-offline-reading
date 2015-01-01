@@ -16,7 +16,8 @@ String aboutTheAuthorURL = "http://erasmusinstirling.altervista.org/author/erasm
 		
 The CSS you would write to reach the <a> of an article in the page above
 String howToReachOneArticleUrlUsingCss = ".entry-title a";										
-The CSS you would write to find the title in an article page (e.g. http://erasmusinstirling.altervista.org/burns-supper-and-ceilidh/)
+The CSS you would write to find the title in an article page 
+(e.g. http://erasmusinstirling.altervista.org/burns-supper-and-ceilidh)
 buffer += "<body><h1>" + htmlToParse.select(".entry-title").text() + "</h1>";		
 		
 The CSS you would write to select the paragraphs containing the article
