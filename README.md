@@ -11,20 +11,18 @@ and the author is the only one on the blog "erasmusinstirling".
 The lines you have to change, in order to have the program working properly on the website
 you are interested in, are the ones with the comment "//ToChange" at the end.
 
-The web page about the author you want to save the articles 
-
-String aboutTheAuthorURL = "http://erasmusinstirling.altervista.org/author/erasmusinstirling/";
-
-The CSS you would write to reach the <a> of an article in the page above 
-
-String howToReachOneArticleUrlUsingCss = ".entry-title a";
-
-The CSS you would write to find the title in an article page  
-(e.g. http://erasmusinstirling.altervista.org/burns-supper-and-ceilidh) 
-htmlToParse.select(".entry-title").text()
-
+<pre>
+The web page about the author you want to save the articles
+	String aboutTheAuthorURL = "http://erasmusinstirling.altervista.org/author/erasmusinstirling/";
+		
+The CSS you would write to reach the <a> of an article in the page above
+	String howToReachOneArticleUrlUsingCss = ".entry-title a";										
+		
+The CSS you would write to find the title in an article page (e.g. http://erasmusinstirling.altervista.org/burns-supper-and-ceilidh/)
+	htmlToParse.select(".entry-title").text()	
+		
 The CSS you would write to select the paragraphs containing the article
-
-htmlToParse.select(".entry-content > p")
+	for(Element p : htmlToParse.select(".entry-content > p"))
+</pre>
 
 Ler me know if find it useful or find some errors in it!
