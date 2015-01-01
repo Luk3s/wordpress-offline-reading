@@ -19,9 +19,9 @@ String howToReachOneArticleUrlUsingCss = ".entry-title a";
 
 The CSS you would write to find the title in an article page  
 (e.g. http://erasmusinstirling.altervista.org/burns-supper-and-ceilidh) 
-buffer +="<body><h1>" + htmlToParse.select(".entry-title").text() + "</h1>";
+htmlToParse.select(".entry-title").text()
 
 The CSS you would write to select the paragraphs containing the article
-for(Element p : htmlToParse.select(".entry-content > p"))
+htmlToParse.select(".entry-content > p")
 
 Ler me know if find it useful or find some errors in it!
